@@ -8,7 +8,7 @@
          "skipLibCheck": true,
          "allowSyntheticDefaultImports":true,
          "forceConsistentCasingInFileNames": true,
-         "noFallthroughCasesInSwitch":
+         "noFallthroughCasesInSwitch": true,
          "module":"esnext",
          "moduleResolution": "node",
          "resolveJsonModule": true,
