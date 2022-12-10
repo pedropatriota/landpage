@@ -4,6 +4,16 @@
     ],
     "compilerOptions": {
         "strict": true,
+         "allowJs":true,
+         "skipLibCheck": true,
+         "allowSyntheticDefaultImports":true,
+         "forceConsistentCasingInFileNames": true,
+         "noFallthroughCasesInSwitch":
+         "module":"esnext",
+         "moduleResolution": "node",
+         "resolveJsonModule": true,
+         "isolatedModules": true,
+         "noEmit": true.
         "esModuleInterop": true,
         "lib": [
             "dom",
@@ -12,3 +22,5 @@
         "jsx": "react-jsx"
     }
 }
+
+ 
