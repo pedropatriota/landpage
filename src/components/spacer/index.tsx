@@ -6,6 +6,7 @@ type TSpacer = {
 
 const Container = styled.div<TSpacer>`
   margin: ${({ margin }) => margin};
+`
 
 export const Spacer = ({ margin }: TSpacer) => {
   return <Container margin={margin} />;
