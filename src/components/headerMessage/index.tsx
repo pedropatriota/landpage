@@ -1,0 +1,134 @@
+import React, { useEffect, useMemo, useState } from "react";
+import styled from "styled-components";
+import useWindowSize from "../../hooks/useWindowSize";
+import { Link } from "../Button";
+
+type TLink = {
+  width: number | string;
+  height: number;
+  font: number;
+};
+
+type TStylePosition = {
+  position?: string;
+  align?: "center" | "left" | "right" | "justfy";
+  isAbout?: boolean;
+};
+
+type TMessage = {
+  hasLink?: boolean;
+  title?: string;
+  description?: React.ReactNode;
+  topMobile?: string;
+} & TStylePosition;
+
+const ContainerMobile = styled.div<TMessage>`
+  width: 359.551px;
+  text-align: center;
+
+  h2 {
+    color: #4fc4c9;
+    margin-top: ${({ topMobile }) => (topMobile ? topMobile : "-60px")};
+    margin-bottom: 25px;
+    font-size: 24px;
+  }
+  p {
+    color: #fff;
+    margin-bottom: 15px;
+    line-height: 20px;
+    text-align: left;
+
+    span {
+      font-weight: bold;
+      color: #4fc4c9;
+    }
+  }
+`;
+
+const ContainerDesktop = styled.div<TStylePosition>`
+  width: 40%;
+  position: ${({ position }) => (position ? position : "absolute")};
+  left: 10%;
+  top: 180px;
+  text-align: ${({ align }) => (align ? align : "center")};
+
+  ${({ isAbout }) =>
+    isAbout &&
+    `
+      z-index: 1;
+    `}
+
+  h2 {
+    color: #4fc4c9;
+    margin-top: -50px;
+    margin-bottom: 25px;
+    font-size: 45px;
+  }
+  p {
+    color: #fff;
+    margin-bottom: 18px;
+    line-height: 25px;
+
+    ${({ isAbout }) =>
+      isAbout &&
+      `
+      text-align: left;
+    `}
+
+    span {
+      font-weight: bold;
+      color: #4fc4c9;
+    }
+  }
+`;
+
+export const HeaderMessage = ({
+  title,
+  description,
+  hasLink = true,
+  position,
+  align,
+  topMobile,
+  isAbout
+}: TMessage) => {
+  const { width } = useWindowSize();
+
+  const [linkStyle, setLinkStyle] = useState<TLink>({
+    width: 359.551,
+    height: 53,
+    font: 16
+  });
+
+  useEffect(() => {
+    if (width && width <= 768) {
+      setLinkStyle({ width: 359.551, height: 53, font: 16 });
+    } else {
+      setLinkStyle({ width: 500, height: 74, font: 18 });
+    }
+  }, [width, position]);
+
+  const content = useMemo(() => {
+    return (
+      <>
+        <h2>{title}</h2>
+        <p>{description}</p>
+        {hasLink && (
+          <Link
+            title="QUERO AGENDAR MINHA SESSÃO GRATUITA"
+            {...linkStyle}
+            address="https://www.google.com/index.html"
+          />
+        )}
+      </>
+    );
+  }, [title, description, linkStyle, hasLink]);
+
+  if (width && width <= 768) {
+    return <ContainerMobile topMobile={topMobile}>{content}</ContainerMobile>;
+  }
+  return (
+    <ContainerDesktop position={position} align={align} isAbout={isAbout}>
+      {content}
+    </ContainerDesktop>
+  );
+};
