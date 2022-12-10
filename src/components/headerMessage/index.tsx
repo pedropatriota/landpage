@@ -116,7 +116,7 @@ export const HeaderMessage = ({
           <Link
             title="QUERO AGENDAR MINHA SESSÃO GRATUITA"
             {...linkStyle}
-            address="https://www.google.com/index.html"
+            address="https://docs.google.com/forms/d/e/1FAIpQLSd-lnYKXqSarbQAJk4wTK2kgH5YSufAw7wLZtbYxRbnKd2rXg/viewform?vc=0&c=0&w=1&flr=0"
           />
         )}
       </>
