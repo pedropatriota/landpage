@@ -7,6 +7,8 @@ import { Card } from "../Card";
 import { List } from "../list";
 import { About } from "../About";
 import { CopyRights } from "../CopyRights";
+import headerImage from '../../headerImage.png'
+import subHeaderImage from '../../subHeaderImage.png'
 
 import styled from "styled-components";
 
@@ -45,7 +47,7 @@ export const Template = () => {
     <Container>
       <WarnMessage />
       <HeaderImage
-        urlDesktop="https://ampliamed.com/wp-content/uploads/2022/12/01-desktop-1960x663-1.png"
+        urlDesktop={headerImage}
         urlMobile="https://ampliamed.com/wp-content/uploads/2022/12/01-mobile-369x358-1.png"
       />
       <HeaderMessage
@@ -60,7 +62,7 @@ export const Template = () => {
         height="485px"
         widthMobile="340px"
         heightMobile="240px"
-        urlDesktop="https://ampliamed.com/wp-content/uploads/2022/12/02-desktop-690x495-1.png"
+        urlDesktop={subHeaderImage}
         urlMobile="https://ampliamed.com/wp-content/uploads/2022/12/01-mobile-369x358-1.png"
       />
       <HeaderMessage
