@@ -7,8 +7,10 @@ import { Card } from "../Card";
 import { List } from "../list";
 import { About } from "../About";
 import { CopyRights } from "../CopyRights";
-import headerImage from '../../headerImage.png'
-import subHeaderImage from '../../subHeaderImage.png'
+import headerImage from "../../images/headerImage.png";
+import headerImageMobile from "../../images/headerImageMobile.png";
+import subHeaderImage from "../../images/subHeaderImage.png";
+import subHeaderImageMobile from "../../images/subHeaderImageMobile.png";
 
 import styled from "styled-components";
 
@@ -46,10 +48,7 @@ export const Template = () => {
   return (
     <Container>
       <WarnMessage />
-      <HeaderImage
-        urlDesktop={headerImage}
-        urlMobile="https://ampliamed.com/wp-content/uploads/2022/12/01-mobile-369x358-1.png"
-      />
+      <HeaderImage urlDesktop={headerImage} urlMobile={headerImageMobile} />
       <HeaderMessage
         align="left"
         title="Sessão estratégica para você ter mais pacientes vindos das redes
@@ -63,7 +62,7 @@ export const Template = () => {
         widthMobile="340px"
         heightMobile="240px"
         urlDesktop={subHeaderImage}
-        urlMobile="https://ampliamed.com/wp-content/uploads/2022/12/01-mobile-369x358-1.png"
+        urlMobile={subHeaderImageMobile}
       />
       <HeaderMessage
         topMobile="-20px"
