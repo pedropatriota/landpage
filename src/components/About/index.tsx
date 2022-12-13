@@ -39,7 +39,7 @@ export const About = () => {
           Dentre todas as experiências, conhecimentos e da atuação no nicho da
           saúde há tantos anos, hoje carrego títulos, especializações e
           conhecimentos para não ser apenas uma especialista em marketing
-          médico, e sim, <span>MENTORA</span> em sua área de atuação.
+          médico, e sim, <span>MENTORA</span> em minha área de atuação.
         </p>
       </>
     );
