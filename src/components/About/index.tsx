@@ -3,6 +3,8 @@ import styled from "styled-components";
 import useWindowSize from "../../hooks/useWindowSize";
 import { HeaderImage } from "../headerLogo";
 import { HeaderMessage } from "../headerMessage";
+import aboutImage from "../../images/aboutImage.png";
+import aboutImageMobile from "../../images/aboutImage.png";
 import { Spacer } from "../spacer";
 
 const AboutDesktop = styled.div`
@@ -53,8 +55,8 @@ export const About = () => {
             height="485px"
             widthMobile="340px"
             heightMobile="240px"
-            urlDesktop="https://ampliamed.com/wp-content/uploads/2022/12/03-desktop-856x476-1.png"
-            urlMobile="https://ampliamed.com/wp-content/uploads/2022/12/03-mobile-280x280-1.png"
+            urlDesktop={aboutImage}
+            urlMobile={aboutImageMobile}
           />
           <HeaderMessage
             topMobile="20px"
