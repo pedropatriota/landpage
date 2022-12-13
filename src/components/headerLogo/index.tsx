@@ -22,6 +22,10 @@ const ImgContainer = styled.div<TImage>`
   background-repeat: no-repeat;
   background-attachment: scroll;
 
+  @media (min-width: 768px) {
+    mask-image: linear-gradient(to bottom, #7d7979 90%, #00000003 100%);
+  }
+
   ${({ isAbout }) =>
     isAbout &&
     `
@@ -41,7 +45,7 @@ const ImgContainer = styled.div<TImage>`
     ${({ isAboutMobile }) =>
       isAboutMobile &&
       `
-      -webkit-mask-image: linear-gradient(to bottom, #7d7979 90%, #00000003 100%);
+      mask-image: linear-gradient(to bottom, #7d7979 90%, #00000003 100%);
     `}
   }
 `;
@@ -54,7 +58,7 @@ export const HeaderImage = ({
   urlMobile,
   urlDesktop,
   isAbout,
-  isAboutMobile
+  isAboutMobile,
 }: TImage) => (
   <ImgContainer
     height={height}
