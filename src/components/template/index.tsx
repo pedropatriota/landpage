@@ -33,7 +33,7 @@ export const Template = () => {
       <>
         <p>
           Em 30 minutos iremos traçar o plano para construir e fazer o seu
-          consultório lucrar mais nos próximos 6 meses.
+          consultório lucrar mais nos próximos meses.
         </p>
         <p>
           Se você é médico, já produz conteúdo nas redes sociais e deseja ter
