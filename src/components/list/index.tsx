@@ -52,7 +52,7 @@ export const List = () => {
           <BsCheckCircleFill className="icon" />
         </div>
         <p>
-          Médicos que não obtiveram o resContainertado esperado dentro da rede
+          Médicos que não obtiveram o reconhecimento esperado dentro da rede
           social;{" "}
         </p>
       </li>
