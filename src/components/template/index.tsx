@@ -68,7 +68,7 @@ export const Template = () => {
         topMobile="-20px"
         hasLink={false}
         position="unset"
-        title="Pra quem é a Sessão Estratégica gratuita?"
+        title="Para quem é a Sessão Estratégica gratuita?"
         description={<List />}
       />
       <Spacer margin="40px 0" />
