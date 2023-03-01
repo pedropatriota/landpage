@@ -28,12 +28,11 @@ const ContainerMobile = styled.div<TMessage>`
 
   h2 {
     color: #4fc4c9;
-    margin-top: ${({ topMobile }) => (topMobile ? topMobile : "-60px")};
     margin-bottom: 25px;
     font-size: 24px;
   }
   p {
-    color: #fff;
+    color: #000;
     margin-bottom: 15px;
     line-height: 20px;
     text-align: left;
@@ -65,9 +64,10 @@ const ContainerDesktop = styled.div<TStylePosition>`
     font-size: 45px;
   }
   p {
-    color: #fff;
+    color: #000;
     margin-bottom: 18px;
     line-height: 25px;
+    font-size: 18px;
 
     ${({ isAbout }) =>
       isAbout &&
@@ -89,14 +89,14 @@ export const HeaderMessage = ({
   position,
   align,
   topMobile,
-  isAbout
+  isAbout,
 }: TMessage) => {
   const { width } = useWindowSize();
 
   const [linkStyle, setLinkStyle] = useState<TLink>({
     width: 359.551,
     height: 53,
-    font: 16
+    font: 16,
   });
 
   useEffect(() => {

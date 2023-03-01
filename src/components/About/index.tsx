@@ -3,15 +3,16 @@ import styled from "styled-components";
 import useWindowSize from "../../hooks/useWindowSize";
 import { HeaderImage } from "../headerLogo";
 import { HeaderMessage } from "../headerMessage";
-import aboutImage from "../../images/aboutImage.png";
-import aboutImageMobile from "../../images/aboutImage.png";
+import aboutImage from "../../images/aboutImage.jpg";
+import aboutImageMobile from "../../images/aboutImageMobile.png";
 import { Spacer } from "../spacer";
 
 const AboutDesktop = styled.div`
   margin-top: 50px;
   display: flex;
   width: 100%;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: flex-end;
 `;
 
 export const About = () => {
@@ -21,25 +22,23 @@ export const About = () => {
     return (
       <>
         <p>
-          <span>Publicitária</span> de formação, atuando há mais 6 anos no
-          mercado com o nicho em <span>Marketing Médico</span> através de sua
-          agência, Ampliamed.
+          Eu sou extremamente orgulhosa de ter 6 anos de experiência em
+          marketing médico e de ter atendido mais de 200 médicos em todo o país.
         </p>
-        <p>Especializações:</p>
-        <ul>
-          <li>
-            Monitoramento de Mídias Sociais: Planejamento, Estratégia e
-            Resultados - ESPM;
-          </li>
-          <li>Cursos em Marketing digital na área da Saúde;</li>
-          <li>Pós-graduação em marketing digital - IPAM/Porto em Portugal.</li>
-        </ul>
-        <Spacer margin="20px 0" />
         <p>
-          Dentre todas as experiências, conhecimentos e da atuação no nicho da
-          saúde há tantos anos, hoje carrego títulos, especializações e
-          conhecimentos para não ser apenas uma especialista em marketing
-          médico, e sim, <span>MENTORA</span> em minha área de atuação.
+          Trabalhando em todas as especialidades, desenvolvi uma vasta gama de
+          competências que me permitem oferecer serviços de qualidade superior
+          aos meus clientes.
+        </p>
+        <p>
+          Meu trabalho em marketing médico tem sido focado principalmente em
+          ajudar médicos nas áreas de dermatologia, cirurgia plástica e outras
+          especialidades. Essas áreas exigem conhecimentos específicos e
+          habilidade de atender às necessidades dos pacientes de maneira eficaz.
+        </p>
+        <p>
+          Estou ansiosa para continuar ajudando médicos em todo o país a
+          alcançar seus objetivos e crescer em seus negócios.
         </p>
       </>
     );
@@ -56,7 +55,7 @@ export const About = () => {
             widthMobile="340px"
             heightMobile="240px"
             urlDesktop={aboutImage}
-            urlMobile={aboutImageMobile}
+            urlMobile={aboutImage}
           />
           <HeaderMessage
             topMobile="20px"
@@ -78,12 +77,12 @@ export const About = () => {
           />
           <HeaderImage
             isAbout
-            width="690px"
+            width="400px"
             height="485px"
             widthMobile="340px"
             heightMobile="240px"
-            urlDesktop="https://ampliamed.com/wp-content/uploads/2022/12/03-desktop-856x476-1.png"
-            urlMobile="https://ampliamed.com/wp-content/uploads/2022/12/03-mobile-280x280-1.png"
+            urlDesktop={aboutImage}
+            urlMobile={aboutImage}
           />
         </AboutDesktop>
       )}

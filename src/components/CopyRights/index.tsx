@@ -13,7 +13,7 @@ const Container = styled.div`
     font-size: 13px;
     font-weight: 400;
     text-align: center;
-    color: #000;
+    color: #fff;
   }
 `;
 

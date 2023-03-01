@@ -19,7 +19,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(13, 13, 13);
+  background-color: #fff;
   background-image: none;
   background-position: 53.6627% 7.2121%;
   background-repeat: no-repeat;
@@ -33,13 +33,16 @@ export const Template = () => {
       <>
         <p>
           Em 30 minutos iremos traçar o plano para construir e fazer o seu
-          consultório lucrar mais nos próximos meses.
+          consultório lucrar mais nos próximos <strong>6 meses</strong>.
         </p>
         <p>
           Se você é médico, já produz conteúdo nas redes sociais e deseja ter
-          uma rede digital mais lucrativa sem depender de dancinhas ou investir
-          uma fortuna em agências, agende agora uma call estratégica gratuita
-          comigo e meu time de especialistas.
+          uma rede digital mais lucrativa{" "}
+          <strong>
+            sem depender de dancinhas ou investir uma fortuna em agências
+          </strong>
+          , agende agora uma call estratégica gratuita comigo e meu time de
+          especialistas.
         </p>
       </>
     );
@@ -51,11 +54,10 @@ export const Template = () => {
       <HeaderImage urlDesktop={headerImage} urlMobile={headerImageMobile} />
       <HeaderMessage
         align="left"
-        title="Sessão estratégica para você ter mais pacientes vindos das redes
-        sociais."
+        title="Sessão estratégica gratuita para você aumentar o número de pacientes em seu consultório."
         description={description}
       />
-      <Spacer margin="20px 0" />
+      <Spacer margin="40px 0" />
       <HeaderImage
         width="690px"
         height="485px"

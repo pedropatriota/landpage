@@ -1,4 +1,3 @@
-import React from "react";
 import styled, { css } from "styled-components";
 
 type TImage = {
@@ -15,7 +14,6 @@ type TImage = {
 const ImgContainer = styled.div<TImage>`
   height: ${({ height }) => (height ? height : "798.867px")};
   width: ${({ width }) => (width ? width : "100%")};
-  background-color: rgb(13, 13, 13);
   background-image: url(${({ urlDesktop }) => urlDesktop});
   background-position: 53.6627% 7.2121%;
   background-size: cover;
@@ -24,17 +22,8 @@ const ImgContainer = styled.div<TImage>`
 
   @media (min-width: 768px) {
     mask-image: linear-gradient(to bottom, #7d7979 90%, #00000003 100%);
+    border-radius: 8px;
   }
-
-  ${({ isAbout }) =>
-    isAbout &&
-    `
-      position:absolute;
-      bottom: 60px;
-      right: 0;
-      index:0;
-      opacity:0.5;
-    `}
 
   @media (max-width: 768px) {
     background-image: url(${({ urlMobile }) => urlMobile});
@@ -45,6 +34,7 @@ const ImgContainer = styled.div<TImage>`
     ${({ isAboutMobile }) =>
       isAboutMobile &&
       `
+      border-radius: 8px;
       mask-image: linear-gradient(to bottom, #7d7979 90%, #00000003 100%);
     `}
   }

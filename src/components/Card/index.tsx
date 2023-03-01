@@ -50,8 +50,7 @@ export const Card = () => {
       <CardContainer>
         <TbFileCheck size="50" color="#20797C" />
         <p>
-          <span>Briefing inicial</span>, vamos fazer um levantamento do momento
-          atual do seu ambiente digital.
+          <span>Levantamento de dados</span> do momento atual.
         </p>
       </CardContainer>
       <CardContainer>
@@ -63,8 +62,7 @@ export const Card = () => {
       <CardContainer>
         <MdOutlineTipsAndUpdates size="50" color="#20797C" />
         <p>
-          <span>Sugestões práticas</span> para seu negócio digital subir de
-          nível.
+          <span>Sugestões</span> para melhorar o seu posicionamento.
         </p>
       </CardContainer>
       <CardContainer>

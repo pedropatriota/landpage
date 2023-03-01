@@ -4,20 +4,13 @@ import { BsCheckCircleFill } from "react-icons/bs";
 const Container = styled.ul`
   list-style: none;
   li {
-    color: rgb(189, 189, 189);
+    color: #4fc4c9;
     text-align: left;
     margin-bottom: 20px;
     font-style: normal;
     font-weight: 400;
     display: flex;
     align-items: flex-start;
-
-    &:hover {
-      .icon {
-        transition: 0.5s;
-        color: #4fc4c9;
-      }
-    }
 
     div {
       max-width: 20px;

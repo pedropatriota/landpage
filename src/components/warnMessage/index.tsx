@@ -5,7 +5,7 @@ export const WarnMessage = () => {
   return (
     <S.Container>
       <p>
-        <span>Mentoria exclusiva</span> para profissionais da área da saúde
+        <span>Mentoria exclusiva para MÉDICOS</span>
       </p>
     </S.Container>
   );
