@@ -27,7 +27,7 @@ const ContainerMobile = styled.div<TMessage>`
   text-align: center;
 
   h2 {
-    color: #4fc4c9;
+    color: #20797c;
     margin-bottom: 25px;
     font-size: 24px;
   }
@@ -39,7 +39,7 @@ const ContainerMobile = styled.div<TMessage>`
 
     span {
       font-weight: bold;
-      color: #4fc4c9;
+      color: #20797c;
     }
   }
 `;
@@ -58,7 +58,7 @@ const ContainerDesktop = styled.div<TStylePosition>`
     `}
 
   h2 {
-    color: #4fc4c9;
+    color: #20797c;
     margin-top: -50px;
     margin-bottom: 25px;
     font-size: 45px;
@@ -77,7 +77,7 @@ const ContainerDesktop = styled.div<TStylePosition>`
 
     span {
       font-weight: bold;
-      color: #4fc4c9;
+      color: #20797c;
     }
   }
 `;
