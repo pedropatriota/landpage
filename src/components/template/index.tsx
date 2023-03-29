@@ -29,24 +29,15 @@ const Container = styled.div`
 
 export const Template = () => {
   const description = useMemo(() => {
-    return (
-      <>
+    return (     
         <p>
           Em 30 minutos iremos traçar o plano para construir e fazer o seu
           consultório lucrar mais nos próximos <strong>6 meses</strong>.
-        </p>
-        <p>
-          Se você é médico, já produz conteúdo nas redes sociais e deseja ter
-          uma rede digital mais lucrativa{" "}
-          <strong>
-            sem depender de dancinhas ou investir uma fortuna em agências
-          </strong>
-          , agende agora uma call estratégica gratuita comigo e meu time de
-          especialistas.
-        </p>
-      </>
+        </p>     
     );
   }, []);
+  
+  
 
   return (
     <Container>
@@ -54,7 +45,9 @@ export const Template = () => {
       <HeaderImage urlDesktop={headerImage} urlMobile={headerImageMobile} />
       <HeaderMessage
         align="left"
-        title="Sessão estratégica gratuita para você aumentar o número de pacientes em seu consultório."
+        title="Se você é médico, já produz conteúdo nas redes sociais e deseja ter
+          uma rede digital mais lucrativa, agende agora uma sessão gratuita comigo e meu time de
+          especialistas"
         description={description}
       />
       <Spacer margin="40px 0" />
