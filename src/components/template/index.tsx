@@ -45,9 +45,7 @@ export const Template = () => {
       <HeaderImage urlDesktop={headerImage} urlMobile={headerImageMobile} />
       <HeaderMessage
         align="left"
-        title="Se você é médico, já produz conteúdo nas redes sociais e deseja ter
-          uma rede digital mais lucrativa, agende agora uma sessão gratuita comigo e meu time de
-          especialistas"
+        title="Se você é médico, e deseja ter uma rede digital mais lucrativa, agende agora uma sessão gratuita comigo e meu time de especialistas"
         description={description}
       />
       <Spacer margin="40px 0" />
