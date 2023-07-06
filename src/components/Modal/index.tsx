@@ -80,8 +80,7 @@ export const Modal = forwardRef<HTMLDivElement, IModal>((props, ref) => {
         </p>
 
         <Style.Form
-          name="contact"
-          method="POST"
+          name="mentoria_form"
           data-netlify="true"
           onSubmit={handleSubmit}
         >
