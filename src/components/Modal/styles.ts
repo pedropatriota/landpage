@@ -15,11 +15,13 @@ export const Container = styled.div<{ openModal: boolean }>`
 
 export const ModalContainer = styled.div`
   padding: 35px;
-  width: 500px;
-  height: 500px;
-  background-color: #fff;
+  width: 90%;
+  max-width: 500px;
+  height: fit-content;
+  background-color: rgb(255, 255, 255);
   border-radius: 5px;
   z-index: 99;
+  margin: 0 auto;
 `;
 
 export const Button = styled.button`
