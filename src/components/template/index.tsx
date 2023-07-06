@@ -6,6 +6,7 @@ import { Spacer } from "../spacer";
 import { Card } from "../Card";
 import { List } from "../list";
 import { About } from "../About";
+import { Modal } from "../Modal";
 import { CopyRights } from "../CopyRights";
 import headerImage from "../../images/headerImage.png";
 import headerImageMobile from "../../images/headerImageMobile.png";
@@ -29,15 +30,13 @@ const Container = styled.div`
 
 export const Template = () => {
   const description = useMemo(() => {
-    return (     
-        <p>
-          Em 30 minutos iremos traçar o plano para construir e fazer o seu
-          consultório lucrar mais nos próximos <strong>6 meses</strong>.
-        </p>     
+    return (
+      <p>
+        Em 30 minutos iremos traçar o plano para construir e fazer o seu
+        consultório lucrar mais nos próximos <strong>6 meses</strong>.
+      </p>
     );
   }, []);
-  
-  
 
   return (
     <Container>
@@ -74,6 +73,9 @@ export const Template = () => {
       <Spacer margin="40px 0" />
       <About />
       <CopyRights />
+      <Modal>
+        <p>Modal</p>
+      </Modal>
     </Container>
   );
 };

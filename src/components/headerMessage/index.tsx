@@ -51,12 +51,6 @@ const ContainerDesktop = styled.div<TStylePosition>`
   top: 180px;
   text-align: ${({ align }) => (align ? align : "center")};
 
-  ${({ isAbout }) =>
-    isAbout &&
-    `
-      z-index: 1;
-    `}
-
   h2 {
     color: #20797c;
     margin-top: -50px;
